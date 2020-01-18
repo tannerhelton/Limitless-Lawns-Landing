@@ -8,9 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|PT+Serif:700" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <link rel="icon" href="src/img/ll-logo.png" type="image/x-icon"/>
-<link rel="shortcut icon" href="src/img/ll-logo.png" type="image/x-icon"/>
+    <link rel="icon" href="src/img/ll-logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="src/img/ll-logo.png" type="image/x-icon" />
 </head>
+
 <body class="is-boxed has-animations">
     <div class="body-wrap boxed-container">
         <header class="site-header">
@@ -35,32 +36,92 @@
             </div>
         </header>
         <script>
-  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
-  analytics.load("vpIGrsfgsU9xVYtiFPLIzkRQWOvSXIwo");
-  analytics.page();
-  }}();
-</script>
-        
-<script>
+            ! function() {
+                var analytics = window.analytics = window.analytics || [];
+                if (!analytics.initialize)
+                    if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice.");
+                    else {
+                        analytics.invoked = !0;
+                        analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"];
+                        analytics.factory = function(t) {
+                            return function() {
+                                var e = Array.prototype.slice.call(arguments);
+                                e.unshift(t);
+                                analytics.push(e);
+                                return analytics
+                            }
+                        };
+                        for (var t = 0; t < analytics.methods.length; t++) {
+                            var e = analytics.methods[t];
+                            analytics[e] = analytics.factory(e)
+                        }
+                        analytics.load = function(t, e) {
+                            var n = document.createElement("script");
+                            n.type = "text/javascript";
+                            n.async = !0;
+                            n.src = "https://cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+                            var a = document.getElementsByTagName("script")[0];
+                            a.parentNode.insertBefore(n, a);
+                            analytics._loadOptions = e
+                        };
+                        analytics.SNIPPET_VERSION = "4.1.0";
+                        analytics.load("vpIGrsfgsU9xVYtiFPLIzkRQWOvSXIwo");
+                        analytics.page();
+                    }
+            }();
+        </script>
 
-  window.intercomSettings = {
-    app_id: "qbofczvc"
-  };
-</script>
+        <script>
+            window.intercomSettings = {
+                app_id: "qbofczvc"
+            };
+        </script>
 
-<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/qbofczvc';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+        <script>
+            (function() {
+                var w = window;
+                var ic = w.Intercom;
+                if (typeof ic === "function") {
+                    ic('reattach_activator');
+                    ic('update', w.intercomSettings);
+                } else {
+                    var d = document;
+                    var i = function() {
+                        i.c(arguments);
+                    };
+                    i.q = [];
+                    i.c = function(args) {
+                        i.q.push(args);
+                    };
+                    w.Intercom = i;
+                    var l = function() {
+                        var s = d.createElement('script');
+                        s.type = 'text/javascript';
+                        s.async = true;
+                        s.src = 'https://widget.intercom.io/widget/qbofczvc';
+                        var x = d.getElementsByTagName('script')[0];
+                        x.parentNode.insertBefore(s, x);
+                    };
+                    if (w.attachEvent) {
+                        w.attachEvent('onload', l);
+                    } else {
+                        w.addEventListener('load', l, false);
+                    }
+                }
+            })();
+        </script>
         <main>
             <section class="hero text-light text-center">
                 <div class="container-sm">
                     <div class="hero-inner">
                         <h1 class="hero-title h2-mobile mt-0 is-revealing">Quick, Reliable Lawn Care</h1>
                         <p class="hero-paragraph is-revealing">Powered by the teens near you</p>
-                        <p class="hero-cta is-revealing"><a class="button button-secondary button-shadow" target="_blank" href="https://airtable.com/shrZ3SkGDdF2joh0O">Request Service</a></p>
+                        <p class="hero-cta is-revealing"><a class="button button-secondary button-shadow" target="_blank" href="/service.html">Request Service</a></p>
                         <div style="height:120px;"></div>
                     </div>
                 </div>
             </section>
-            
+
             <section id="problem" class="features-extended section">
                 <div class="container">
                     <div class="features-extended-inner section-inner ">
@@ -77,12 +138,11 @@
                             </div>
                             <div class="feature-extended-body">
                                 <h3 class="mt-0">Dear Homeowners,</h3>
-                                <p>Lawn care is a pesky, perennial problem. Doing all the work yourself can be incredibly inconvenient, but finding the right service provider can be a hassle as well. Professional contractors can be expensive, but the kid down the street with a mower (if you're lucky enough to have one) can't always match the quality and reliablity of a more established company.</p> 
+                                <p>Lawn care is a pesky, perennial problem. Doing all the work yourself can be incredibly inconvenient, but finding the right service provider can be a hassle as well. Professional contractors can be expensive, but the kid down the street with a mower (if you're lucky enough to have one) can't always match the quality and reliablity of a more established company.</p>
                                 <p>With Limitless Lawns, you get not only the best of both worlds, but the opporunity to see your impact on the younger generation in your community. Because when you pay the smiling Limitless Lawns crew member who shows up at your door, you're investing in the future. You're funding college savings. You're showing that teen that their drive, their initiative is paying off. From Steve Jobs to Mark Cuban, successful leaders in many fields have cited mowing lawns as their first step into entrepreneurship.</p>
                                 <p>Give the young a chance. They won't let you down.</p>
                                 <p>Sincerely,</p>
-                                <p>Tanner Helton <br>
-                                   Co-Founder </p>
+                                <p>Tanner Helton <br> Co-Founder </p>
                             </div>
                         </div>
                         <div class="feature-extended">
@@ -92,19 +152,18 @@
                             <div class="feature-extended-body">
                                 <h3 class="mt-0">Dear Teens,</h3>
                                 <p>Whether you're an experienced mowing mogul or a newcomer to the industry, you're likely aware of the simple fact that there aren't many jobs for teens that pay better by the hour than mowing. For me, the problem was volume: even after putting up flyers, it was tough for me to find enough clients on my street to replace my summer job. </p>
-                                <p>As a Limitless Lawns crew member, you'll enjoy the high pay of lawn care jobs plus immediate access to the homeowners not just across the street but across the neighborhood. But more importantly, you'll be part of a team you can trust. Out of town for a couple of days? Grinding for finals? If you need a lawn covered, we have your back.  </p>
+                                <p>As a Limitless Lawns crew member, you'll enjoy the high pay of lawn care jobs plus immediate access to the homeowners not just across the street but across the neighborhood. But more importantly, you'll be part of a team you can trust. Out of town for a couple of days? Grinding for finals? If you need a lawn covered, we have your back. </p>
                                 <p>Of course, there are expectations that come with being part of our team. You'll be an ambassador of our mission: to foster community and bridge the generational gap through a simple job that always needs doing. Your repsect and integrity are invaluable, and your actions today will make you better tomorrow.</p>
                                 <p>So invest your time in yourself. Join the crew built for teens by teens.</p>
                                 <p>Sincerely,</p>
-                                <p>Watson Deacon<br>
-                                   Co-Founder </p>
+                                <p>Watson Deacon<br> Co-Founder </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            
-<!--        Team Section    -->
+
+            <!--        Team Section    -->
             <section id="team" class="features section text-center">
                 <div class="container">
                     <div class="features-inner section-inner has-top-divider">
@@ -116,9 +175,7 @@
                                         <img src="src/img/tanner-200x200.jpg" height="200" width="200">
                                     </div>
                                     <h4 class="feature-title h3-mobile">Tanner Helton</h4>
-                                    <p class="text-sm"><b>Leawood</b><br>
-                                    BacklotCars intern, Tennis player, tech guru<br>
-                                    Lawn care experience: 2 years</p>
+                                    <p class="text-sm"><b>Leawood</b><br> BacklotCars intern, Tennis player, tech guru<br> Lawn care experience: 2 years</p>
                                 </div>
                             </div>
                             <div class="feature is-revealing">
@@ -127,20 +184,16 @@
                                         <img src="src/img/WATSONPROFILEPIC.jpeg">
                                     </div>
                                     <h4 class="feature-title h3-mobile">Watson Deacon</h4>
-                                    <p class="text-sm"><b>Countryside</b><br>
-                                    Eagle Scout, Mock Trial captain, music aficionado<br>
-                                    Lawn care experience: 6 years</p>
+                                    <p class="text-sm"><b>Countryside</b><br> Eagle Scout, Mock Trial captain, music aficionado<br> Lawn care experience: 6 years</p>
                                 </div>
                             </div>
                             <div class="feature is-revealing">
                                 <div class="feature-inner">
                                     <div class="feature-icon">
-                                       <img src="src/img/aidan.jpg">
+                                        <img src="src/img/aidan.jpg">
                                     </div>
                                     <h4 class="feature-title h3-mobile">Aidan Lake</h4>
-                                    <p class="text-sm"><b>Bridlewood</b><br>
-                                    Entrepreneurship Club leader, MacNSeitz employee, frisbee fan<br>
-                                    Lawn care experience: 6 years</p>
+                                    <p class="text-sm"><b>Bridlewood</b><br> Entrepreneurship Club leader, MacNSeitz employee, frisbee fan<br> Lawn care experience: 6 years</p>
                                 </div>
                             </div>
                             <div class="feature is-revealing">
@@ -149,16 +202,14 @@
                                         <img src="src/img/luke.jpeg">
                                     </div>
                                     <h4 class="feature-title h3-mobile">Luke Rottinghaus</h4>
-                                    <p class="text-sm"><b>West Riding</b><br>
-                                    NHS President, Retreat leader, Freshman brothers leader<br>
-                                    Lawn care experience: 7 years</p>
+                                    <p class="text-sm"><b>West Riding</b><br> NHS President, Retreat leader, Freshman brothers leader<br> Lawn care experience: 7 years</p>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
-            
+
             <!--      Crew member sign up      -->
             <section class="features section text-center">
                 <div class="container">
@@ -176,9 +227,7 @@
                     <div class="features-inner section-inner has-top-divider">
                         <h2 class="section-title mt-0">Get in Touch</h2>
                         <div class="features-wrap">
-                                    <p>Email: sales@limitlesslawns.app<br>
-                                       Call or text: (913) 285-8342<br>
-                                       Or click the purple icon in the bottom right corner</p>
+                            <p>Email: sales@limitlesslawns.app<br> Call or text: (913) 285-8342<br> Or click the purple icon in the bottom right corner</p>
                         </div>
                     </div>
                 </div>
@@ -193,7 +242,7 @@
                             <img src="src/img/full-logo.png" width="300">
                         </a>
                     </div>
-                   <ul class="footer-links list-reset">
+                    <ul class="footer-links list-reset">
                         <li>
                             <a href="#problem">The Problem</a>
                         </li>
